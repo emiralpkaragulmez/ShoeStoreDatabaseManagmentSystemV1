@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.ReportStageController">
+   <children>
+      <ToggleButton fx:id="deneme" layoutX="225.0" layoutY="246.0" mnemonicParsing="false" onMouseClicked="#deneme" prefHeight="55.0" prefWidth="150.0" text="Execute Query Manually" />
+      <ComboBox fx:id="comboBox" layoutX="34.0" layoutY="92.0" prefHeight="39.0" prefWidth="531.0" promptText="Select Query" >
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:value="1-Sales person has made most sale."/>
+               <String fx:value="2-Which shoe has sold most at 2022."/>
+               <String fx:value="3-Which brand has most amount of shoes."/>
+               <String fx:value="4-List top 10 customers who bought the most shoes  in last month."/>
+               <String fx:value="5-List all customers who bought the same same shoe more than once from the same salesperson."/>
+            </FXCollections>
+         </items>
+      </ComboBox>
+      <ToggleButton fx:id="goBack" layoutX="415.0" layoutY="246.0" mnemonicParsing="false" onMouseClicked="#goBack" prefHeight="55.0" prefWidth="150.0" text="Go Back" />
+      <ToggleButton fx:id="runSelecetedQueryButton" layoutX="34.0" layoutY="246.0" mnemonicParsing="false" onMouseClicked="#handleButtonAction" prefHeight="55.0" prefWidth="150.0" text="Run Selected Query" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.APStageController">
+   <children>
+      <ToggleButton fx:id="makeSellButton" layoutX="98.0" layoutY="225.0" mnemonicParsing="false" onMouseClicked="#changeStageToMakeSell" prefHeight="56.0" prefWidth="141.0" text="Sales" AnchorPane.leftAnchor="99.5" />
+      <ToggleButton fx:id="changeCustomersInformationButton" layoutX="229.0" layoutY="96.0" mnemonicParsing="false" onMouseClicked="#changeSceneToCustomersInformation" prefHeight="56.0" prefWidth="141.0" text="Customers" AnchorPane.leftAnchor="229.5" />
+      <ToggleButton fx:id="changeStockButton" layoutX="430.0" layoutY="96.0" mnemonicParsing="false" onMouseClicked="#changeStageToShoes" prefHeight="56.0" prefWidth="141.0" text="Shoes" AnchorPane.leftAnchor="429.5" />
+      <ToggleButton fx:id="changeSalesPersonsButton" layoutX="27.0" layoutY="96.0" mnemonicParsing="false" onMouseClicked="#changeStageToChangeSalesPersons" prefHeight="56.0" prefWidth="141.0" text="Sales Persons" AnchorPane.leftAnchor="29.5" />
+      <ToggleButton fx:id="getReportButton" layoutX="332.0" layoutY="225.0" mnemonicParsing="false" onMouseClicked="#changeSceneToGetReport" prefHeight="56.0" prefWidth="141.0" text="Get Report" AnchorPane.leftAnchor="359.5" />
+      <ToggleButton fx:id="goBack" layoutX="511.0" layoutY="29.0" mnemonicParsing="false" onMouseClicked="#goBack" text="Go Back" />
+   </children>
+</AnchorPane>

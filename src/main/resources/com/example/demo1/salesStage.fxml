@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.salesController">
+    <children>
+        <ToggleButton fx:id="SearchButton" layoutX="413.0" layoutY="21.0" mnemonicParsing="false" onMouseClicked="#searchId" prefHeight="26.0" prefWidth="145.0" text="Search With ID" AnchorPane.leftAnchor="413.0" />
+        <TextField fx:id="SaleIdTextField" layoutX="28.0" layoutY="21.0" prefHeight="25.0" prefWidth="326.0" promptText="Sale Id" />
+        <TextField fx:id="CustomerIdTextField" layoutX="28.0" layoutY="53.0" prefHeight="25.0" prefWidth="326.0" promptText="Customer Id" />
+        <TextField fx:id="ShoeIdTextField" layoutX="28.0" layoutY="88.0" prefHeight="25.0" prefWidth="326.0" promptText="Shoe Id" />
+        <TextField fx:id="SalesPersonIdTextField" layoutX="28.0" layoutY="121.0" prefHeight="25.0" prefWidth="326.0" promptText="Sales Person Id" />
+        <TextField fx:id="DateTextField" layoutX="28.0" layoutY="154.0" prefHeight="25.0" prefWidth="326.0" promptText="Year-Month-Day" />
+        <ToggleButton fx:id="UpdateButton" layoutX="413.0" layoutY="53.0" mnemonicParsing="false" onMouseClicked="#Update" prefHeight="26.0" prefWidth="145.0" text="Update" />
+        <ToggleButton fx:id="DeleteButton" layoutX="413.0" layoutY="88.0" mnemonicParsing="false" onMouseClicked="#Delete" prefHeight="26.0" prefWidth="145.0" text="Delete With ID" />
+        <ToggleButton fx:id="AddRecordButton" layoutX="413.0" layoutY="121.0" mnemonicParsing="false" onMouseClicked="#addRecord" prefHeight="26.0" prefWidth="145.0" text="Add Record" />
+        <TextField fx:id="OutputTextField" editable="false" layoutX="29.0" layoutY="239.0" prefHeight="130.0" prefWidth="541.0" />
+        <ToggleButton fx:id="LookRecordsButton" layoutX="413.0" layoutY="154.0" mnemonicParsing="false" onMouseClicked="#lookRecords" prefHeight="26.0" prefWidth="145.0" text="Look Records" />
+        <ToggleButton fx:id="goBack" layoutX="413.0" layoutY="187.0" mnemonicParsing="false" onMouseClicked="#goBack" prefHeight="26.0" prefWidth="145.0" text="Go Back" />
+    </children>
+</AnchorPane>
